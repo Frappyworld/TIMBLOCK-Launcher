@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="degin.css" /> <img src="TIMBLOCKLOGO.svg" />
 <link rel="stylesheet" href="buttondegin.css" />
 <link rel="stylesheet" href="textcenter.css" />
-<script src="comment.js"></script>
+
 <title>TIMBLOCK Launcher</title>
 <p>TIMBLOCKへようこそ！</p>
 <p>ウィキについて調べたいのは</p>
@@ -81,31 +81,8 @@
 <body>
   <hr />
 </body>
-<form action="https://docs.google.com/forms/d/e/aoaNEFZ378Xp4q6U9/formResponse" target="hidden_iframe" method="post" onsubmit="return test(this.wcheck.value)">
-<p><input name="695356993" placeholder="名前（必須）" value="名無し" required></p>
-<p><input name="1524890832" placeholder="メールアドレス（任意）" type="email"></p>
-<p><textarea name="2144446040" placeholder="コメント（必須）" rows="10" cols="40" maxlength="400" id="wcheck" required></textarea></p>
-<input type="submit" id="submitbutton" value="送信">
-</form>
-<iframe onload='if(submitted){window.location="";}' id=hidden_iframe name=hidden_iframe style=display:none></iframe>
-
-<script type="text/javascript">
-var NGComments = ["死ね","バカ",".exe"]; // 簡易的なNGワードの設定
-var regex = new RegExp(NGComments.join("|"));
-function test(wcheck) {
-	if (wcheck.match(regex) != null) {
-		alert("ERROR: コメントにNGワードが含まれています");
-		return false;
-	}
-	document.getElementById("submitbutton").disabled = true;
-	textareas = document.getElementsByTagName('textarea');
-	for(var i=0 ;i < textareas.length ;i ++ ){
-		textareas[i].value = textareas[i].value.replace( /</g ,'&lt;' );
-	}
-	inputs = document.getElementsByTagName('input');
-	for(var i=0 ;i < inputs.length ;i ++ ){
-		inputs[i].value = inputs[i].value.replace( /</g ,'&lt;' );
-	}
-	return submitted=!0;
-}
-</script>
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24gOmHXMI4.Rciy8nDWemTv0"+"&opts=16798&num=10&ts=1714291251793");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
